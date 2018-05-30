@@ -1,0 +1,17 @@
+header .desktop {
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+
+header .tablet {
+
+}
+
+header .mobile {
+
+}
+
+.logo {
+  display: flex;
+}
