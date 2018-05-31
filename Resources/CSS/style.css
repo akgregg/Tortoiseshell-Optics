@@ -1,3 +1,12 @@
+/*universal sytles*/
+html, body {
+    font-family: helvetica;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 100%;
+    margin: auto;
+    background-color: #F7FDF6;
+}
 header .desktop {
   display: flex;
   justify-content: space-between;
@@ -14,4 +23,61 @@ header .mobile {
 
 .logo {
   display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav {
+  margin-right: 1rem;
+}
+
+/*
+@media only screen and (min-width: 960px) {
+  .desktop {
+    display: block;
+    max-width: 100%;
+    /*justify-content: space-between;*/
+    /*align-items: stretch;
+  }
+.tablet, .mobile {
+  display: none;
+}
+  @media only screen and (max-width: 960px) {
+    header {
+      display: block;
+      max-width: 100%;
+      /*justify-content: space-between;*/
+      /*align-items: stretch;
+    }
+    @media only screen and (max-width: 480px) {
+      header {
+        display: none;
+        max-width: 100%;
+        /*justify-content: space-between;*/
+        /*align-items: stretch;
+        ]*/
+
+
+.main-banner {
+  background-size: cover;
+  background-image: url("../images/TO-mainbanner-img.png");
+  height: 30rem;
 }
