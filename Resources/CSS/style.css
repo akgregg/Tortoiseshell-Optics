@@ -7,18 +7,15 @@ html, body {
     margin: auto;
     background-color: #F7FDF6;
 }
-header .desktop {
-  display: flex;
-  justify-content: space-between;
+
+/*header styles*/
+
+header {
+  display: block;
   background-color: cadetblue;
-}
-
-header .tablet {
-
-}
-
-header .mobile {
-
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -49,35 +46,103 @@ nav {
   margin-right: 1rem;
 }
 
-/*
-@media only screen and (min-width: 960px) {
+
+@media only screen and (min-width: 1250px) {
   .desktop {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     max-width: 100%;
-    /*justify-content: space-between;*/
-    /*align-items: stretch;
   }
 .tablet, .mobile {
   display: none;
 }
-  @media only screen and (max-width: 960px) {
-    header {
-      display: block;
+}
+  @media only screen and (min-width: 960px) and (max-width: 1250px) {
+    .tablet {
+      display: flex;
+      justify-content: space-between;
       max-width: 100%;
-      /*justify-content: space-between;*/
-      /*align-items: stretch;
     }
-    @media only screen and (max-width: 480px) {
-      header {
-        display: none;
-        max-width: 100%;
-        /*justify-content: space-between;*/
-        /*align-items: stretch;
-        ]*/
+    .desktop, .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 960px) {
+.mobile {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+max-width: 100%;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+img {
+  height: 1.5rem;
+}
+.desktop, .tablet {
+display: none;
+}
+}
+
+
 
 
 .main-banner {
   background-size: cover;
   background-image: url("../images/TO-mainbanner-img.png");
   height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.headline {
+  position: relative;
+  top: 10rem;
+  left: 50%;
+  width: 35%;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/*services offered styles*/
+
+.services-offered {
+  border: 1px black solid;
+  height: 14rem;
+  width: 100%;
+}
+.service-type {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.service {
+  display: flex;
+  height: 8rem;
+  border: 1px solid black;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.service img {
+  max-width: 3.5rem;
+}
+
+.service h5 {
+  max-width: 5rem;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .desktop {
+      display: none;
+    }}
